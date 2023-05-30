@@ -1,6 +1,6 @@
 spring:
   application:
-    name: one-application
+    name: two-application
 server:
   port: 0
 eureka:
