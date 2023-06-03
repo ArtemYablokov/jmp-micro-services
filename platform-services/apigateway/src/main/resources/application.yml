@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: apigateway
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+zuul:
+  routes:
+    one-service:
+      serviceId: one-application
+  host:
+    socket-timeout-millis: 30000
